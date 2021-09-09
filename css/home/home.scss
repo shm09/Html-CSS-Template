@@ -6,7 +6,7 @@
 // Landing Page
 .landing-page {
   display: flex;
-  margin-bottom: 35px;
+  height: calc(100vh - 69px);
   .intro {
     width: 40%;
     padding-top: 100px;
@@ -24,15 +24,13 @@
       position: relative;
       width: 160px;
       height: 50px;
-      font-size: 17px;
-      color: white;
-      border: none;
-      outline: none;
+      font-family: inherit;
       border-radius: 0 20px;
       background-image: linear-gradient(to right, $main-color, $sec-color);
-      cursor: pointer;
-      font-family: inherit;
       transition: border-radius 0.5s, opacity 0.5s;
+      border: none;
+      outline: none;
+      cursor: pointer;
       &::before {
         content: "";
         width: 100%;
@@ -47,19 +45,36 @@
         opacity: 0;
         transition: opacity 0.5s;
       }
+
       &:hover {
         border-radius: 20px 0;
       }
       &:hover::before {
         opacity: 1;
       }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        line-height: 50px;
+      }
     }
   }
   .images-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 35vw;
+    overflow: hidden;
     img {
-      width: 500px;
+      width: 111%;
+      height: 111%;
       position: absolute;
-      top: -87px;
+      top: -65px;
       right: 0;
       z-index: -1;
     }
@@ -69,8 +84,6 @@
         display: none;
       }
     }
-  }
-  @media (max-width: 1200px) {
   }
   @media (min-width: 992px) {
     .intro {

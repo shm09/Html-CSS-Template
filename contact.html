@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#4b778d">
+    <meta name="theme-color" content="#4b778d" />
     <title>Creative Agency</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,6 +23,9 @@
     <link rel="icon" type="image/text" href="images/Logo-image/tap-logo.png" />
   </head>
   <body>
+    <button id="scroll-top">
+      <i class="fas fa-arrow-circle-up"></i>
+    </button>
     <!-- Links Page -->
     <section class="links-page">
       <div class="overlay">
@@ -75,6 +78,8 @@
       </div>
     </header>
     <!-- Header Section -->
+
+    <!-- Contact Title -->
     <section class="contact-page">
       <div class="container">
         <div class="contact-title">
@@ -86,73 +91,79 @@
           </p>
         </div>
       </div>
-    </section>
+      <!-- Contact Title -->
 
-    <div class="container">
-      <div class="contact-content">
-        <div class="contact-forms">
-          <form action="">
-            <input
-              name="user"
-              type="text"
-              placeholder="First Name"
-              autocomplete="off"
-            />
-            <input name="pass" type="text" placeholder="Last Name" />
-            <input
-              name="email"
-              type="email"
-              placeholder="Email"
-              autocomplete="off"
-            />
-            <input
-              name="subject"
-              type="text"
-              placeholder="Subject"
-              autocomplete="off"
-            />
-            <textarea placeholder="Massage"></textarea>
-            <input name="submit" type="submit" value="Send" />
-          </form>
-        </div>
-        <div class="contact-info">
-          <div class="information">
-            <div class="info-image">
-              <img src="./images/address.png" alt="" />
+      <!-- Contact Content -->
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-forms">
+            <div class="inputs-alerts-error">
+              Should Fill The Required Information
             </div>
-            <div class="info-title-desc">
-              <h4>Address</h4>
-              <p>28 Neon Tower, New York City, USA</p>
-            </div>
+            <form action="">
+              <input
+                name="username"
+                type="text"
+                placeholder="User Name"
+                autocomplete="off"
+              />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                autocomplete="off"
+              />
+              <input
+                name="subject"
+                type="text"
+                placeholder="Subject"
+                autocomplete="off"
+              />
+              <textarea placeholder="Massage"></textarea>
+              <input name="submit" type="submit" value="Submit" />
+            </form>
           </div>
-          <div class="information">
-            <div class="info-image">
-              <img src="./images/email2.png" alt="" />
+          <div class="contact-info">
+            <div class="information">
+              <div class="info-image">
+                <img src="./images/address.png" alt="" />
+              </div>
+              <div class="info-title-desc">
+                <h4>Address</h4>
+                <p>28 Neon Tower, New York City, USA</p>
+              </div>
             </div>
-            <div class="info-title-desc">
-              <h4>Email</h4>
-              <p>
-                anyone@example.com<br />
-                anyone@example.com
-              </p>
+            <div class="information">
+              <div class="info-image">
+                <img src="./images/email2.png" alt="" />
+              </div>
+              <div class="info-title-desc">
+                <h4>Email</h4>
+                <p>
+                  anyone@example.com<br />
+                  anyone@example.com
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="information">
-            <div class="info-image">
-              <img src="./images/call.png" alt="" />
-            </div>
-            <div class="info-title-desc">
-              <h4>Call</h4>
-              <p>
-                +1 978 555 5555<br />
-                +1 978 555 4444
-              </p>
+            <div class="information">
+              <div class="info-image">
+                <img src="./images/call.png" alt="" />
+              </div>
+              <div class="info-title-desc">
+                <h4>Call</h4>
+                <p>
+                  +1 978 555 5555<br />
+                  +1 978 555 4444
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- Contact Content -->
+    </section>
 
     <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

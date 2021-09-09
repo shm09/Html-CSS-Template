@@ -28,3 +28,33 @@ function renderSpan() {
   removedSpna.style.width = "45px";
   removedSpna.style.display = "block";
 }
+
+// Get Button Element
+let btn = document.getElementById("scroll-top");
+
+// Check The Scroll On Window
+window.onscroll = function () {
+  if (window.scrollY > 500) {
+    // Change The style Of The Button
+    btn.style.opacity = 1;
+    btn.style.width = "40px";
+    btn.style.height = "40px";
+    btn.style.pointerEvents = "all";
+    btn.style.right = "10px";
+  } else {
+    // Change The style Of The Button
+    btn.style.opacity = 0;
+    btn.style.width = "0px";
+    btn.style.height = "0px";
+    btn.style.pointerEvents = "none";
+    btn.style.right = "-56px";
+  }
+};
+
+// Add Scroll To Top On The Button
+btn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+// Make The Scrolling Smooth On Site
+window.document.documentElement.style.scrollBehavior = "smooth";
